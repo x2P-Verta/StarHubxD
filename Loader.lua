@@ -23,57 +23,57 @@ local Place = {
 local PlaceId = game.PlaceId
 
 if Place["Blox Fruit"]["First Sea"] == PlaceId then
-    print("First Sea")
+    local BloxFruit = {
+        [1] = "Main Script",
+        [2] = "Auto Bounty",
+        [3] = "Chest Farm",
+    }
+
     if v == 3 then
-        repeat
-            wait()
-        until game:IsLoaded()
+        print("First Sea - " .. BloxFruit[v])
+        repeat wait() until game:IsLoaded()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/x2P-Verta/StarHub/main/ChestFarmBeta.lua", true))()
     elseif v == 2 then
-        print("Auto Bounty")
+        print("First Sea - " .. BloxFruit[v])
     elseif v == 1 then
-        print("Main Script")
+        print("First Sea - " .. BloxFruit[v])
     end
 elseif Place["Blox Fruit"]["Second Sea"] == PlaceId then
-    print("Second Sea")
     if v == 3 then
-        repeat
-            wait()
-        until game:IsLoaded()
+        print("Second Sea - " .. BloxFruit[v])
+        repeat wait() until game:IsLoaded()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/x2P-Verta/StarHub/main/ChestFarmBeta.lua", true))()
     elseif v == 2 then
-        print("Auto Bounty")
+        print("Second Sea - " .. BloxFruit[v])
     elseif v == 1 then
-        print("Main Script")
+        print("Second Sea - " .. BloxFruit[v])
     end
 elseif Place["Blox Fruit"]["Third Sea"] == PlaceId then
-    print("Third Sea")
     if v == 3 then
-        repeat
-            wait()
-        until game:IsLoaded()
+        print("Third Sea - " .. BloxFruit[v])
+        repeat wait() until game:IsLoaded()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/x2P-Verta/StarHub/main/ChestFarmBeta.lua", true))()
     elseif v == 2 then
-        print("Auto Bounty")
+        print("Third Sea - " .. BloxFruit[v])
     elseif v == 1 then
-        print("Main Script")
+        print("Third Sea - " .. BloxFruit[v])
     end
 elseif Place["King Legacy"]["First Sea"] == PlaceId then
-    print("First Sea")
+    print("First Sea - King Legacy")
 elseif Place["King Legacy"]["Second Sea"] == PlaceId then
-    print("Second Sea")
+    print("Second Sea - King Legacy")
 elseif Place["King Legacy"]["Golden Arena"] == PlaceId then
-    print("Golden Arena")
+    print("Golden Arena - King Legacy")
 elseif Place["Blade Ball"]["Main Server"] == PlaceId then
-    print("Main Server")
+    print("Main Server - Blade Ball")
 elseif Place["Blade Ball"]["Pro Server"] == PlaceId then
-    print("Pro Server")
+    print("Pro Server - Blade Ball")
 elseif Place["Blade Ball"]["Ranked Lobby"] == PlaceId then
-    print("Ranked Lobby")
+    print("Ranked Lobby - Blade Ball")
 elseif Place["Blade Ball"]["Ranked Matches"] == PlaceId then
-    print("Ranked Matches")
+    print("Ranked Matches - Blade Ball")
 elseif Place["Death Ball"]["Main Server"] == PlaceId then
-    print("Main Server")
+    print("Main Server - Death Ball")
 else
     game.Players.LocalPlayer:Kick("Wrong Maps")
     wait(2.5)
