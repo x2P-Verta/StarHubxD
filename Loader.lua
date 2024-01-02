@@ -37,7 +37,10 @@ if Place["Blox Fruit"]["First Sea"] == PlaceId then
 elseif Place["Blox Fruit"]["Second Sea"] == PlaceId then
     print("Second Sea")
     if v == 3 then
-        print("Chest Farm")
+        repeat
+            wait()
+        until game:IsLoaded()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/x2P-Verta/StarHub/main/ChestFarmBeta.lua", true))()
     elseif v == 2 then
         print("Auto Bounty")
     elseif v == 1 then
@@ -46,7 +49,10 @@ elseif Place["Blox Fruit"]["Second Sea"] == PlaceId then
 elseif Place["Blox Fruit"]["Third Sea"] == PlaceId then
     print("Third Sea")
     if v == 3 then
-        print("Chest Farm")
+        repeat
+            wait()
+        until game:IsLoaded()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/x2P-Verta/StarHub/main/ChestFarmBeta.lua", true))()
     elseif v == 2 then
         print("Auto Bounty")
     elseif v == 1 then
@@ -68,4 +74,8 @@ elseif Place["Blade Ball"]["Ranked Matches"] == PlaceId then
     print("Ranked Matches")
 elseif Place["Death Ball"]["Main Server"] == PlaceId then
     print("Main Server")
+else
+    game.Players.LocalPlayer:Kick("Wrong Maps")
+    wait(2.5)
+    game:Shutdown()
 end
